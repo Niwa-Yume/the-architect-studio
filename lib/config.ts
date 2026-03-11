@@ -8,7 +8,7 @@
  */
 
 export const siteConfig = {
-  name: "Pulsewave",
+  name: "The Architect Studio",
   tagline: "Built to evolve ideas.",
   description:
     "We craft exceptional digital experiences that captivate audiences and drive results. From strategy to execution, we bring your vision to life.",

@@ -90,23 +90,33 @@ export function SocialProof() {
   }, []);
 
   return (
-    <section ref={sectionRef} id="social-proof" className="bg-background py-24 lg:py-32">
-      <div className="px-6 sm:px-12 lg:px-24 max-w-360 2xl:max-w-450 3xl:max-w-550 mx-auto">
-        <div ref={headerRef} className="flex items-center justify-between mb-12 lg:mb-16">
-          <h2 className="text-3xl lg:text-4xl font-medium tracking-tight text-foreground">
+    <section
+      ref={sectionRef}
+      id="social-proof"
+      className="bg-background py-24 lg:py-32"
+    >
+      <div className="3xl:max-w-550 mx-auto max-w-360 px-6 sm:px-12 lg:px-24 2xl:max-w-450">
+        <div
+          ref={headerRef}
+          className="mb-12 flex items-center justify-between lg:mb-16"
+        >
+          <h2 className="text-foreground text-3xl font-medium tracking-tight lg:text-4xl">
             Trusted by industry leaders
           </h2>
           <Link
             href="#contact"
-            className="hidden sm:inline-flex items-center justify-center px-6 py-3 rounded-full bg-foreground text-background text-sm font-medium transition-opacity hover:opacity-80"
+            className="bg-foreground text-background hidden items-center justify-center rounded-full px-6 py-3 text-sm font-medium transition-opacity hover:opacity-80 sm:inline-flex"
           >
             Work with us
           </Link>
         </div>
 
-        <div ref={gridRef} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:grid-rows-[minmax(220px,auto)_minmax(220px,auto)_minmax(180px,auto)]">
+        <div
+          ref={gridRef}
+          className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4 lg:grid-rows-[minmax(220px,auto)_minmax(220px,auto)_minmax(180px,auto)]"
+        >
           <div className="row-span-2 flex flex-col gap-4">
-            <div className="relative flex-1 w-full overflow-hidden rounded-2xl">
+            <div className="relative w-full flex-1 overflow-hidden rounded-2xl">
               <Image
                 src="/img/mock-project1.webp"
                 alt="Team member"
@@ -114,7 +124,7 @@ export function SocialProof() {
                 className="object-cover"
               />
             </div>
-            <div className="relative flex-1 w-full overflow-hidden rounded-full">
+            <div className="relative w-full flex-1 overflow-hidden rounded-full">
               <Image
                 src="/img/mock-project2.webp"
                 alt="Team member"
@@ -124,83 +134,100 @@ export function SocialProof() {
             </div>
           </div>
 
-          <div className="lg:col-span-2 row-span-2 bg-muted/50 rounded-2xl p-8 flex flex-col">
+          <div className="bg-muted/50 row-span-2 flex flex-col rounded-2xl p-8 lg:col-span-2">
             <div>
-              <QuoteIcon className="w-10 h-10 text-foreground/20 mb-6" />
-              <blockquote className="text-2xl lg:text-3xl font-medium leading-snug text-foreground">
-                Pulsewave&apos;s design work output is superb, they could transform our input into dev-ready designs.
+              <QuoteIcon className="text-foreground/20 mb-6 h-10 w-10" />
+              <blockquote className="text-foreground text-2xl leading-snug font-medium lg:text-3xl">
+                The Architect Studio's work output is superb, they could
+                transform our input into dev-ready projects.
               </blockquote>
               <div className="mt-6">
-                <p className="font-semibold text-foreground">Alex Chen</p>
-                <p className="text-sm text-foreground/60">CTO, Nextura</p>
+                <p className="text-foreground font-semibold">Julien Castro</p>
               </div>
             </div>
-            <div className="flex items-center justify-between mt-auto pt-8">
-              <span className="text-xl font-semibold text-foreground">nextura</span>
+            <div className="mt-auto flex items-center justify-between pt-8">
               <Link
-                href="#"
-                className="w-10 h-10 rounded-full bg-foreground/10 flex items-center justify-center hover:bg-foreground hover:text-background transition-colors"
+                href="https://portfolio-julien-castro.vercel.app/"
+                className="bg-foreground/10 hover:bg-foreground hover:text-background flex h-10 w-10 items-center justify-center rounded-full transition-colors"
               >
-                <ArrowIcon className="w-4 h-4" />
+                <ArrowIcon className="h-4 w-4" />
               </Link>
             </div>
           </div>
 
-          <div className="bg-muted/50 rounded-2xl p-6 flex flex-col">
+          <div className="bg-muted/50 flex flex-col rounded-2xl p-6">
             <div className="flex-1">
-              <p className="text-3xl font-semibold text-foreground">3x Faster</p>
-              <p className="text-sm text-foreground/60 mt-1">Time to Market Launch</p>
+              <p className="text-foreground text-3xl font-semibold">
+                3x Faster
+              </p>
+              <p className="text-foreground/60 mt-1 text-sm">
+                Time to Market Launch
+              </p>
             </div>
-            <div className="flex items-center justify-between mt-auto pt-4">
-              <span className="text-sm font-medium text-foreground">novahq</span>
+            <div className="mt-auto flex items-center justify-between pt-4">
+              <span className="text-foreground text-sm font-medium">
+                novahq
+              </span>
               <Link
                 href="#"
-                className="w-10 h-10 rounded-full bg-foreground/10 flex items-center justify-center hover:bg-foreground hover:text-background transition-colors"
+                className="bg-foreground/10 hover:bg-foreground hover:text-background flex h-10 w-10 items-center justify-center rounded-full transition-colors"
               >
-                <ArrowIcon className="w-4 h-4" />
+                <ArrowIcon className="h-4 w-4" />
               </Link>
             </div>
           </div>
 
-          <div className="bg-muted/50 rounded-2xl p-6 flex flex-col">
+          <div className="bg-muted/50 flex flex-col rounded-2xl p-6">
             <div className="flex-1">
-              <p className="text-3xl font-semibold text-foreground">+280%</p>
-              <p className="text-sm text-foreground/60 mt-1">Increase in Engagement</p>
+              <p className="text-foreground text-3xl font-semibold">+280%</p>
+              <p className="text-foreground/60 mt-1 text-sm">
+                Increase in Engagement
+              </p>
             </div>
-            <div className="flex items-center justify-between mt-auto pt-4">
-              <span className="text-sm font-medium text-foreground">arclight</span>
+            <div className="mt-auto flex items-center justify-between pt-4">
+              <span className="text-foreground text-sm font-medium">
+                arclight
+              </span>
               <Link
                 href="#"
-                className="w-10 h-10 rounded-full bg-foreground/10 flex items-center justify-center hover:bg-foreground hover:text-background transition-colors"
+                className="bg-foreground/10 hover:bg-foreground hover:text-background flex h-10 w-10 items-center justify-center rounded-full transition-colors"
               >
-                <ArrowIcon className="w-4 h-4" />
+                <ArrowIcon className="h-4 w-4" />
               </Link>
             </div>
           </div>
 
-          <div className="bg-muted/50 rounded-2xl p-8 flex flex-col">
+          <div className="bg-muted/50 flex flex-col rounded-2xl p-8">
             <div className="flex-1">
-              <p className="text-3xl lg:text-4xl font-semibold text-foreground">Top 1%</p>
+              <p className="text-foreground text-3xl font-semibold lg:text-4xl">
+                Top 1%
+              </p>
               <p className="text-foreground/60 mt-2">
-                Digital Experience<br />& Product Studios
+                Digital Experience
+                <br />& Product Studios
               </p>
             </div>
             <div className="mt-auto pt-6">
-              <p className="text-sm font-medium text-foreground">5.0 Rated On Trustpilot</p>
+              <p className="text-foreground text-sm font-medium">
+                5.0 Rated On Trustpilot
+              </p>
             </div>
           </div>
 
-          <div className="lg:col-span-3 bg-muted/50 rounded-2xl p-8 flex flex-col">
-            <p className="text-xl lg:text-2xl font-medium leading-relaxed text-foreground max-w-3xl flex-1">
-              We helped Meridian rebrand and launch their new platform, resulting in 12M+ users within the first quarter.
+          <div className="bg-muted/50 flex flex-col rounded-2xl p-8 lg:col-span-3">
+            <p className="text-foreground max-w-3xl flex-1 text-xl leading-relaxed font-medium lg:text-2xl">
+              We helped Meridian rebrand and launch their new platform,
+              resulting in 12M+ users within the first quarter.
             </p>
-            <div className="flex items-center justify-between mt-auto pt-6">
-              <span className="text-xl font-semibold text-foreground">Meridian</span>
+            <div className="mt-auto flex items-center justify-between pt-6">
+              <span className="text-foreground text-xl font-semibold">
+                Meridian
+              </span>
               <Link
                 href="#"
-                className="w-10 h-10 rounded-full bg-foreground/10 flex items-center justify-center hover:bg-foreground hover:text-background transition-colors"
+                className="bg-foreground/10 hover:bg-foreground hover:text-background flex h-10 w-10 items-center justify-center rounded-full transition-colors"
               >
-                <ArrowIcon className="w-4 h-4" />
+                <ArrowIcon className="h-4 w-4" />
               </Link>
             </div>
           </div>

@@ -10,7 +10,7 @@ if (typeof window !== "undefined") {
 
 const faqs = [
   {
-    question: "What makes Pulsewave different from other agencies?",
+    question: "What makes the architect studio different from other agencies?",
     answer: "We blend strategic thinking with bold creativity. Unlike traditional agencies, we're a tight-knit team of designers and developers who obsess over every pixel. We don't just deliver projects—we partner with you to create digital experiences that truly move the needle.",
   },
   {

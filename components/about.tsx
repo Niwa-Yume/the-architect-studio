@@ -88,7 +88,7 @@ export function About() {
         </div>
 
         <h2 ref={headingRef} className="text-[clamp(1.75rem,4vw,3rem)] font-medium leading-[1.2] tracking-tight text-center mx-auto text-foreground max-w-4xl">
-          At Pulsewave, we transform bold ideas into immersive digital experiences through good design and relentless creativity.
+          At the Architect studio, we transform bold ideas into immersive digital experiences through good design and relentless creativity.
         </h2>
 
         <Link

@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
 
 export const siteConfig = {
-  name: "React Bits Pro - Agency Template",
+  name: "The Architect Studio",
   description:
     "We craft exceptional digital experiences that captivate audiences and drive results. From strategy to execution, we bring your vision to life.",
   url: "https://pulsewave.design",
   ogImage: "/og-image.png",
-  creator: "@pulsewave",
+  creator: "@thearchitectstudio",
   authors: [
     {
-      name: "Pulsewave Studio",
+      name: "The Architect Studio",
       url: "https://pulsewave.design",
     },
   ],

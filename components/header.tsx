@@ -95,7 +95,7 @@ export function Header() {
             width={120}
             height={20}
           /> */}
-          pulsewave
+          The Architect studio
         </motion.a>
 
         <div className="relative h-12 sm:h-16">
