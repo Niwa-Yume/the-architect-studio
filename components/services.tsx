@@ -32,6 +32,10 @@ const services = [
   { id: 2, title: "Brand Identity" },
   { id: 3, title: "Creative Direction" },
   { id: 4, title: "Product Design" },
+  { id: 5, title: "Digital Marketing" },
+  { id: 6, title: "Photo et Vidéo" },
+  { id: 7, title: "Application et Website developpement" },
+  { id: 8, title: "Motion Design" },
 ];
 
 function ServiceItem({ title, index }: { title: string; index: number }) {
